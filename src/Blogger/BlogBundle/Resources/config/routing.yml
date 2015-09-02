@@ -1,0 +1,21 @@
+blogger_blog_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BloggerBlogBundle:Default:index }
+blogger_blog_testowy:
+    path:     /test
+    defaults: { _controller: BloggerBlogBundle:Testowy:test }
+blogger_blog_start:
+    pattern:  /
+    defaults: { _controller: BloggerBlogBundle:Page:index }
+    requirements:
+        _method:  GET
+blogger_blog_about:
+    pattern:  /about
+    defaults: { _controller: BloggerBlogBundle:Page:about }
+    requirements:
+        _method:  GET
+blogger_blog_contact:
+    pattern:  /contact
+    defaults: { _controller: BloggerBlogBundle:Page:contact }
+    requirements:
+        _method:  GET|POST
